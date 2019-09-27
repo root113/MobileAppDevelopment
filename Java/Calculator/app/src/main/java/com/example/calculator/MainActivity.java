@@ -24,26 +24,50 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addition(View view) {
-        int num1 = Integer.parseInt(editText1.getText().toString());
-        int num2 = Integer.parseInt(editText2.getText().toString());
-        resultText.setText("Result: " + (num1+num2));
+
+        if(editText1.getText().toString().equals("") || editText2.getText().toString().equals("")) {
+            System.out.println("Field(s) empty!");
+        }
+        else {
+            int num1 = Integer.parseInt(editText1.getText().toString());
+            int num2 = Integer.parseInt(editText2.getText().toString());
+            resultText.setText("Result: " + (num1+num2));
+        }
     }
 
     public void subtraction(View view) {
-        int num1 = Integer.parseInt(editText1.getText().toString());
-        int num2 = Integer.parseInt(editText2.getText().toString());
-        resultText.setText("Result: " + (num1-num2));
+
+        if(editText1.getText().toString().equals("") || editText2.getText().toString().equals("")) {
+            System.out.println("Field(s) empty!");
+        }
+        else {
+            int num1 = Integer.parseInt(editText1.getText().toString());
+            int num2 = Integer.parseInt(editText2.getText().toString());
+            resultText.setText("Result: " + (num1-num2));
+        }
     }
 
     public void multiplication(View view) {
-        int num1 = Integer.parseInt(editText1.getText().toString());
-        int num2 = Integer.parseInt(editText2.getText().toString());
-        resultText.setText("Result: " + (num1*num2));
+
+        if(editText1.getText().toString().equals("") || editText2.getText().toString().equals("")) {
+            System.out.println("Field(s) empty!");
+        }
+        else {
+            int num1 = Integer.parseInt(editText1.getText().toString());
+            int num2 = Integer.parseInt(editText2.getText().toString());
+            resultText.setText("Result: " + (num1*num2));
+        }
     }
 
     public void division(View view) {
-        int num1 = Integer.parseInt(editText1.getText().toString());
-        int num2 = Integer.parseInt(editText2.getText().toString());
-        resultText.setText("Result: " + (num1/num2));
+
+        if(editText1.getText().toString().equals("") || editText2.getText().toString().equals("")) {
+            System.out.println("Field(s) empty!");
+        }
+        else {
+            int num1 = Integer.parseInt(editText1.getText().toString());
+            int num2 = Integer.parseInt(editText2.getText().toString());
+            resultText.setText("Result: " + (num1/num2));
+        }
     }
 }
